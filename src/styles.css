@@ -1,0 +1,49 @@
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+.eventCard
+{
+    height: 100% !important;
+    box-shadow: none!important;
+    border: none!important;
+    border-radius: 0!important;
+}
+.eventImage
+{
+    background-size: cover;
+    height: 40%!important;
+    background-position: center;
+    margin-bottom: 2rem!important;
+}
+.eventCard .card-title
+{
+    margin-bottom: 2rem!important;
+}
+.cal-month-view .cal-cell-top
+{
+    min-height: auto!important;
+    height: auto!important;
+}
+.cal-month-view .cal-day-cell
+{
+    height: 4rem!important;
+    min-height: 4rem!important;
+}
+
+.cal-cell-top.ng-star-inserted
+{
+    min-height: auto!important;
+    height: auto!important;
+}
+.cal-day-number
+{
+    font-size: 1.2em!important;
+}
+.cal-day-badge.ng-star-inserted
+{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.eventCard .card-body
+{
+    overflow: hidden!important;
+}
