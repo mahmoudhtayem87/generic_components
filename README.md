@@ -1,6 +1,6 @@
 # Generic Components Library
 
-This project has been created to push angular web component to be used in liferay 
+This project has been created to push angular web component to be used in liferay, And to demonstrate how to bundle a group of web components in one library and use it in Liferay
 
 ## Steps To Deploy
 - Clone the repo
