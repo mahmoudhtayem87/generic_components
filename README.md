@@ -1,27 +1,25 @@
-# IntranetComponents
+# Generic Components Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.3.
+This project has been created to push angular web component to be used in liferay 
 
-## Development server
+## Steps To Deploy
+- Clone the repo
+- Run 'npm i' to install all the required dependencies.
+- Run 'npm run build-element' to build the web component and generate the required js and css files
+- Web Components script and style files will be available in 'componentLibrary' folder
+- Navigate to Liferay -> Client Extensions -> Add JS Client Extension and CSS Client Extension
+- Navigate to Liferay -> Design -> Fragments -> Import the fragments collection available withing the Repo Folder 'Fragments', for each component you will find a fragment to enable you adding the web component to Liferay pages and enable the content author to manage the configuration as part of the fragments configuration tab.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Available Components 
 
-## Code scaffolding
+### - Events Calendar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Events Calendar has been created to showcase how to read data from Liferay Web Content Structure and render is as a Calendar View, The component has been created to accept any web content structure for that you will notice a configuration keys to map the required fields on the run time.
 
-## Build
+- Event Structure Id
+- Event Title Field
+- Event Description Field
+- Event Image Field
+- Event Date Field
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Alt text](./screenshots/calendar.png?raw=true "Calendar Component Screenshot")
