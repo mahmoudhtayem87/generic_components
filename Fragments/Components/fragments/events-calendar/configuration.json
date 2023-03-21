@@ -1,0 +1,42 @@
+{
+	"fieldSets": [{
+		"fields": [
+                {
+                    "name": "structureId",
+                    "label": "Event Structure Id",
+                    "type": "text",
+                    "dataType": "string",
+                    "defaultValue": "-1"
+                },
+{
+                    "name": "titleField",
+                    "label": "Event Title Field",
+                    "type": "text",
+                    "dataType": "string",
+                    "defaultValue": "-1"
+                },
+{
+                    "name": "descriptionField",
+                    "label": "Event Description Field",
+                    "type": "text",
+                    "dataType": "string",
+                    "defaultValue": "-1"
+                }
+                ,
+{
+                    "name": "imageField",
+                    "label": "Event Image Field",
+                    "type": "text",
+                    "dataType": "string",
+                    "defaultValue": "-1"
+                } ,
+{
+                    "name": "dateField",
+                    "label": "Event Date Field",
+                    "type": "text",
+                    "dataType": "string",
+                    "defaultValue": "-1"
+                }
+            ]
+	}]
+}

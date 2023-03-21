@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-8">
+        <mwl-demo-utils-calendar-header [(view)]="view" [(viewDate)]="viewDate">
+        </mwl-demo-utils-calendar-header>
+        <mwl-calendar-month-view
+                [viewDate]="viewDate"
+                [events]="events"
+                (eventClicked)="selectDate($event)"
+        >
+        </mwl-calendar-month-view>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 d-flex p-0">
+        <div class="card eventCard m-auto p-0 w-100" >
+            <div class="card-body"  *ngIf="selectedEvent">
+                <h5 class="card-title">{{selectedEvent.title}}</h5>
+                <div style="background-image: url('{{selectedEvent.image}}');" class="eventImage">
+
+                </div>
+                <p class="card-text over-flow-hidden">{{selectedEvent.description}}</p>
+            </div>
+            <div class="card-body d-flex"  *ngIf="!selectedEvent">
+                <h5 class="card-title mb-2 mx-auto">Select Event!</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
