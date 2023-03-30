@@ -30,7 +30,6 @@ export class LiferayService {
           event.Id = result["items"][index]["id"];
           events.push(event);
         }
-        console.log(events);
         resolve(events);
       });
     });

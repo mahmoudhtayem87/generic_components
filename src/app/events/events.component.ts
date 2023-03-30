@@ -11,6 +11,7 @@ import {Subject} from "rxjs";
 })
 export class EventsComponent implements OnInit {
   constructor(private lr_service:LiferayService) {
+
   }
   view: CalendarView = CalendarView.Month;
   selectedEvent : any = null;

@@ -8,8 +8,30 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.12/dist/css/uikit.min.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body class="ig-typography ig-scrollbar">
-<lr-events event-date-field="123213"></lr-events>
+<body class="ig-typography ig-scrollbar mat-typography">
+
+<lr-slotted-card ng-version="15.2.3">
+  <div slot="c_image_banner"><picture data-fileentryid="44374">
+    <source media="(max-width:300px)" srcset="http://localhost:8080/o/adaptive-media/image/44374/Thumbnail-300x300/leagueoflegendsbestcarrychampions2018pantheon.jpg?t=1680126881419">
+    <source media="(max-width:820px) and (min-width:300px)" srcset="http://localhost:8080/o/adaptive-media/image/44374/Preview-1000x0/leagueoflegendsbestcarrychampions2018pantheon.jpg?t=1680126881419">
+    <img class="test-image" src="http://localhost:8080/documents/d/guest/leagueoflegendsbestcarrychampions2018pantheon-jpg?download=true" data-fileentryid="44374">
+  </picture>
+  </div>
+  <picture data-fileentryid="44388">
+    <source media="(max-width:300px)" srcset="http://localhost:8080/o/adaptive-media/image/44388/Thumbnail-300x300/1557291375.3948_Dy2yZu_n.jpg?t=1680126923589">
+    <source media="(max-width:480px) and (min-width:300px)" srcset="http://localhost:8080/o/adaptive-media/image/44388/Preview-1000x0/1557291375.3948_Dy2yZu_n.jpg?t=1680126923589">
+    <img data-lfr-editable-id="logo" data-lfr-editable-type="image" slot="c_image" class="test-image" src="http://localhost:8080/documents/d/guest/1557291375-3948_dy2yzu_n-jpg?download=true" data-fileentryid="44388">
+  </picture>
+  <h3 slot="c_title" data-lfr-editable-id="title" data-lfr-editable-type="text">fff</h3>
+  <p slot="c_date" data-lfr-editable-id="date" data-lfr-editable-type="text">10 April 2023</p>
+  <a slot="c_link" data-lfr-editable-id="link" data-lfr-editable-type="link">Test link</a>
+</lr-slotted-card>
+
+
 </body>
 </html>

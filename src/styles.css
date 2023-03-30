@@ -1,4 +1,5 @@
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
+@import "@angular/material/prebuilt-themes/purple-green.css";
 
 .eventCard
 {
@@ -46,4 +47,18 @@
 .eventCard .card-body
 {
     overflow: hidden!important;
+    text-align: justify!important;
 }
+
+.example-card
+{
+    border: solid!important;
+    border-width: thin!important;
+    border-color:gray;
+    padding:0.5rem;
+    margin:0.5rem;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

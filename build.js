@@ -1,7 +1,6 @@
 const fs = require('fs-extra');
 const concat = require('concat');
 const path = require('path');
-
 const buildFolder = './dist/intranet_components';
 const componentBuildFolder = 'componentLibrary';
 const componentBuiltFile = 'components';
@@ -9,7 +8,7 @@ function fromDir(startPath, filter) {
     var _files = [];
     console.log(startPath);
     if (!fs.existsSync(startPath)) {
-        console.log("no dir ", startPath);
+        console.log("Wrong Folder Path!", startPath);
         return;
     }
     var files = fs.readdirSync(startPath);
